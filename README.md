@@ -204,19 +204,19 @@ Again, lets look at the function below...
 
 Type Aliases is used when we want to share types accross different variables, objects, functions etc...so to avoid re-writing we use type aliases...also type aliases helps us avoid repetition and simplifies our code...
 
-`type character = string;
+`type character = string;`
 
-type year = number;
+`type year = number;`
 
-type color = string;
+`type color = string;`
 
-let character = "Emmanuel";
+`let character = "Emmanuel";`
 
-let year = 2023;
+`let year = 2023;`
 
-let color = "Blue";
+`let color = "Blue";`
 
-let CarObject = {
+`let CarObject = {
     name: character,
     year: year,
     color: color
