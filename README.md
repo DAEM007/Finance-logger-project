@@ -222,6 +222,10 @@ Type Aliases is used when we want to share types accross different variables, ob
     color: color
 }`
 
+## Casting in TypeScript
+
+casting in TypeScript can be used with the keyword "as" or by using the tag "<>". 
+
 ## classes in TypeScript
 
 classes in TypeScript works similar to JavaScipt.
