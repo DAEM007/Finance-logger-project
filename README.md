@@ -1,5 +1,7 @@
 # Finance Logger
 
+> This Project is intended to strengthen my knowledge of TypeScript.
+
 ## Types and Inference in TypeScript
 
 ** Types in TypeScript **
