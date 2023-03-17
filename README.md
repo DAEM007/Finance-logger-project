@@ -138,7 +138,7 @@ countries.push("Alaska") //Notice you don't get an error in the browser console 
 
 // insaneCoder = "Damilola" --notice that TS doesn't accept this since it is not an object
 
-## Dynamic types - (any)
+## Dynamic types - (:any)
 
 `let character: any;`
 
@@ -148,9 +148,9 @@ countries.push("Alaska") //Notice you don't get an error in the browser console 
 
 `character = "Damilola";`
 
-// Notice that TS accepts all the above since character is of type any...
+// Notice that TS accepts all the above since character is of type :any...
 
-**Arrays with any type** 
+**Arrays with :any type** 
 
 `let mixed: any[] = [];`
 
@@ -160,9 +160,9 @@ countries.push("Alaska") //Notice you don't get an error in the browser console 
 
 `mixed.push(23);`
 
-//TS accepts all of the above because of the any type
+//TS accepts all of the above because of the :any type
 
-**Objects with any type**
+**Objects with :any type**
 
 `let person: {
     name: any,
@@ -176,6 +176,6 @@ countries.push("Alaska") //Notice you don't get an error in the browser console 
     isBlackBelt: 23
 };`
 
-// TS accepts the above for objects...this is because of the type any
+// TS accepts the above for objects...this is because of the type :any
 
-*Note: Here, that you must be careful how you use the type any because of it invalidates most of the reason why we use TypeScript in the first place...*
+*Note: Here, that you must be careful how you use the type :any because of it invalidates most of the reason why we use TypeScript in the first place...*
