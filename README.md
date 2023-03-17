@@ -28,4 +28,5 @@ let isBlackBelt = false;
 console.log(areaCir(2)); // notice that when you specify the type 'number', it doesn't accept anything other than a number...
 
 **Inference in TypeScript**
+
 *Note: That when you don't specify a type in TypeScript, TypeScript infers the type from your input value.*
