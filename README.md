@@ -221,3 +221,25 @@ Type Aliases is used when we want to share types accross different variables, ob
     year: year,
     color: color
 }`
+
+## classes in TypeScript
+
+`class Person {
+    name: string;
+    age: number;
+    profession: string;
+
+    constructor(n: string, a: number, p: string) {
+        this.name = n,
+        this.age = a,
+        this.profession = p
+    }
+
+    intro() {
+        return `${this.name} is a ${this.profession}`;
+    }
+
+}`
+
+`const person1 = new Person('Damilola', 23, 'Software Engineer.');`
+`console.log(person1.intro());` // Damilola is a Software Engineer.
