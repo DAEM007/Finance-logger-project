@@ -11,12 +11,15 @@ let age = 24;
 let isBlackBelt = false;
 
 // character = 30 -- notice the error "Type 'number' is not assignable to type 'string'."
+
 `character = "Damilola";` //no error -- so you can change the value but not the type of the variable
 
 // age = "sam" -- notice the error "Type 'string' is not assignable to type 'number'."
+
 `age = 23;`
 
 // isBlackBelt = 50; -- notice the error "Type 'number' is not asignable to type 'boolean'."
+
 `isBlackBelt = true;`
 
 `const areaCir = (diameter: number) => {
