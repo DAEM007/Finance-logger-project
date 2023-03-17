@@ -1,8 +1,6 @@
-# Finance Logger
 
-## Types and Inference in TypeScript
 
-* Types in TypeScript
+// Types in TypeScript
 let character = "Emmanuel";
 let age = 24;
 let isBlackBelt = false;
@@ -25,4 +23,8 @@ const areaCir = (diameter: number) => {
 console.log(areaCir(2)); // notice that when you specify the type 'number', it doesn't accept anything other than a number...
 
 // Inference in TypeScript
-> Note that when you don't specify a type in TypeScript, TypeScript infers the type from your input value.
+// Note that when you don't specify a type in TypeScript, TypeScript infers the type from your input value.
+
+
+
+
