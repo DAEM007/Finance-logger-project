@@ -85,3 +85,55 @@ mixed.push(50); //TS accepts this
 // }
 
 // notice from above that also when you comment property of isBlackBelt it throws an error since it doesn't follow the structure of the person object
+
+## Explicit types
+
+`let character: string;`
+
+`let age: number;`
+
+`let isBlackBelt: boolean;`
+
+// age = "Emmanuel" -- notice the error
+
+`age = 40;` // TS accepts this...and similarly to other variables declared above...
+
+**Explicit types for arrays**
+
+`let cars: string[];`
+
+// cars.push("BMW"); --notice the error in the browser console. This is because we should have initialized it to be an empty array to begin with...notice the code below
+
+`let countries: string[] = [];`
+
+countries.push("Alaska") //Notice you don't get an error in the browser console now...This is because we initilized it with an empty array
+
+**union types**
+
+`let person: (string|number|boolean)[] = [];`
+
+`person.push(23);` //TS accepts this
+
+`person.push(true);` //TS accepts this
+
+`person.push("Damilola");` // TS accepts this
+
+// or we can have
+
+`let uid: string|number;`
+
+`uid = 50;` //TS accepts this
+
+`uid = "Emmanuel";` //TS accepts this
+
+**Explicit types for objects**
+
+`let insaneCoder: object = {
+    name: "Emmanuel",
+    age: 24,
+    isBlackBelt: true
+}`
+
+`insaneCoder = ["Damilola", 24, true];` //TS accepts this since array is a type of object
+
+// insaneCoder = "Damilola" --notice that TS doesn't accept this since it is not an object
