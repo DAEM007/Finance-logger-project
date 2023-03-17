@@ -180,7 +180,7 @@ countries.push("Alaska") //Notice you don't get an error in the browser console 
 
 *Note: Here, that you must be careful how you use the type :any because of it invalidates most of the reason why we use TypeScript in the first place...*
 
-## Function Baics (type :void and type :Function)
+## Function Basics (type :void and type :Function)
 
 `let Car: () => void;`
 
