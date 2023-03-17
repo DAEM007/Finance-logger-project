@@ -179,3 +179,45 @@ countries.push("Alaska") //Notice you don't get an error in the browser console 
 // TS accepts the above for objects...this is because of the type :any
 
 *Note: Here, that you must be careful how you use the type :any because of it invalidates most of the reason why we use TypeScript in the first place...*
+
+## Function Baics (type :void and type :Function)
+
+`let Car: () => void;`
+
+// Note: That you use the void type...it means car function doesn't expect a data like a parameter...if you put in data it throws an error...notice the error from the below function...
+
+`//Car = (name: string) => {
+//     return `I am a ${name}`;
+// }`
+
+Again, lets look at the function below...
+
+`let Car: Function;`
+
+// Note: That we don't see an error since we specified type :Function...also notice unlike types :string, :number etc... the letter "f" in type :Function has to be in capital letter...
+
+`Car = (name: string) => {
+    return `I am a ${name}`;
+}`
+
+## Type Aliases
+
+Type Aliases is used when we want to share types accross different variables, objects, functions etc...so to avoid re-writing we use type aliases...also type aliases helps us avoid repetition and simplifies our code...
+
+`type character = string;
+
+type year = number;
+
+type color = string;
+
+let character = "Emmanuel";
+
+let year = 2023;
+
+let color = "Blue";
+
+let CarObject = {
+    name: character,
+    year: year,
+    color: color
+}`
