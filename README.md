@@ -7,7 +7,9 @@
 **Types in TypeScript**
 
 let character = "Emmanuel";
+
 let age = 24;
+
 let isBlackBelt = false;
 
 // character = 30 -- notice the error "Type 'number' is not assignable to type 'string'."
