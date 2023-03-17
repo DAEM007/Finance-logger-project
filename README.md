@@ -224,6 +224,10 @@ Type Aliases is used when we want to share types accross different variables, ob
 
 ## classes in TypeScript
 
+classes in TypeScript works similar to JavaScipt.
+
+*Recall: That a class is more like a "blue print" for an object.*
+
 `class Person {
     name: string;
     age: number;
@@ -242,4 +246,5 @@ Type Aliases is used when we want to share types accross different variables, ob
 }`
 
 `const person1 = new Person('Damilola', 23, 'Software Engineer.');`
+
 `console.log(person1.intro());` // Damilola is a Software Engineer.
