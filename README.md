@@ -137,3 +137,45 @@ countries.push("Alaska") //Notice you don't get an error in the browser console 
 `insaneCoder = ["Damilola", 24, true];` //TS accepts this since array is a type of object
 
 // insaneCoder = "Damilola" --notice that TS doesn't accept this since it is not an object
+
+## Dynamic types - (any)
+
+`let character: any;`
+
+`character = 25;`
+
+`character = true;`
+
+`character = "Damilola";`
+
+// Notice that TS accepts all the above since character is of type any...
+
+**Arrays with any type** 
+
+`let mixed: any[] = [];`
+
+`mixed.push("Emmanuel");`
+
+`mixed.push(true);`
+
+`mixed.push(23);`
+
+//TS accepts all of the above because of the any type
+
+**Objects with any type**
+
+`let person: {
+    name: any,
+    age: any,
+    isBlackBelt: any
+};`
+
+`person = {
+    name: true,
+    age: "Emmanuel",
+    isBlackBelt: 23
+};`
+
+// TS accepts the above for objects...this is because of the type any
+
+*Note: Here, that you must be careful how you use the type any because of it invalidates most of the reason why we use TypeScript in the first place...*
