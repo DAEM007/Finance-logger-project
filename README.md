@@ -252,3 +252,13 @@ classes in TypeScript works similar to JavaScipt.
 `const person1 = new Person('Damilola', 23, 'Software Engineer.');`
 
 `console.log(person1.intro());` // Damilola is a Software Engineer.
+
+**Access Modifiers in Classes**
+
+You can use the following access modifiers in a class in TypeScript...and these modifiers are as follows:
+
+-public: This is the default behaivour of class properties. This means anyone has access to this property both in and out of the class.
+
+-private: This means the property of the class can be accessed only within the class. 
+
+-readonly: This means that the property of the class can be accessed both within and out of the class but cannot be changed/altered.
