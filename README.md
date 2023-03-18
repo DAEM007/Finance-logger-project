@@ -184,7 +184,7 @@ countries.push("Alaska") //Notice you don't get an error in the browser console 
 
 `let Car: () => void;`
 
-// Note: That you use the void type...it means car function doesn't expect a data like a parameter...if you put in data it throws an error...notice the error from the below function...
+// Note: That you use the void type...it means car function doesn't expect to return a data...otherwise it throws an error...notice the error from the below function...
 
 `//Car = (name: string) => {
 //     return `I am a ${name}`;
@@ -262,3 +262,31 @@ You can use the following access modifiers in a class in TypeScript...and these 
 -private: This means the property of the class can be accessed only within the class. 
 
 -readonly: This means that the property of the class can be accessed both within and out of the class but cannot be changed/altered.
+
+## Type interfaces
+
+Recall, when we talked about **type aliases**...interfaces in TypeScript are just like that, only they are specifically for objects and classes.
+
+// Interfaces
+
+`interface person {
+    name: string,
+    age: 23,
+    isBlackBelt: boolean,
+    profession: string,
+    hobbies: Function
+}`
+
+`const person: person = {
+    name: "Emmanuel Damilola",
+    age: 23,
+    isBlackBelt: true,
+    profession: "software engineer",
+    hobbies: (name: string) => {
+        console.log(`${name} loves to code for long hours... `);
+    }
+}`
+
+`person.hobbies(person.name);` // Emmanuel Damilola loves to code for long hours... 
+
+*Note: That in interfaces, something to put in mind is that they can be extended...just like you extend classes in JavaScript.*
