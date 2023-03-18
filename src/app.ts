@@ -1,16 +1,6 @@
 import { Invoice } from "./classes/invoice.js";
-
-const invOne = new Invoice("Tade", "work for website", 250);
-const invTwo = new Invoice("shola", "work for Design", 100);
-
-let invoices: Invoice[] = [];
-
-invoices.push(invOne);
-invoices.push(invTwo);
-
-invoices.forEach(inv => {
-    console.log(inv.client, inv.amount, inv.format());
-});
+import { Payment } from "./classes/payment.js";
+import { HasFormatter } from "./interfaces/HasFormatter.js";
 
 // REFERENCE TO THE DOM ELEMENTS
 
@@ -26,12 +16,15 @@ const amount = document.querySelector('#amount') as HTMLInputElement;
 form.addEventListener('submit', (e: Event) => {
     e.preventDefault();
 
-    console.log({
-        type: type.value,
-        toFrom: toFrom.value,
-        detail: detail.value,
-        amount: amount.valueAsNumber
-    });
+    let doc: HasFormatter;
+
+    if(type.value === "invoice") {
+        doc = new Invoice(toFrom.value, detail.value, amount.valueAsNumber);
+    }else {
+        doc = new Payment(toFrom.value, detail.value, amount.valueAsNumber);
+    }
+    
+    console.log(doc);
     
 })
 
