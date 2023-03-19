@@ -1,4 +1,5 @@
 import { Invoice } from "./classes/invoice.js";
+import { ListTemplate } from "./classes/ListTemplate.js";
 import { Payment } from "./classes/payment.js";
 import { HasFormatter } from "./interfaces/HasFormatter.js";
 
@@ -11,6 +12,11 @@ const type = document.querySelector('#type') as HTMLSelectElement;
 const toFrom = document.querySelector('#tofrom') as HTMLInputElement;
 const detail = document.querySelector('#details') as HTMLInputElement;
 const amount = document.querySelector('#amount') as HTMLInputElement;
+// const ul = document.querySelector('.item-list') as HTMLUListElement;
+// The code for ul below is same as above...
+const ul = document.querySelector('ul')!;
+const li = new ListTemplate(ul);
+
 
 // submit form
 form.addEventListener('submit', (e: Event) => {
@@ -24,7 +30,8 @@ form.addEventListener('submit', (e: Event) => {
         doc = new Payment(toFrom.value, detail.value, amount.valueAsNumber);
     }
     
-    console.log(doc);
+    // render details of the invoice/payment to the DOM
+    li.render(doc, type.value, 'end');
     
-})
+});
 
