@@ -24,10 +24,13 @@ form.addEventListener('submit', (e: Event) => {
 
     let doc: HasFormatter;
 
+    let args: [string, string, number];
+    args = [toFrom.value, detail.value, amount.valueAsNumber];
+
     if(type.value === "invoice") {
-        doc = new Invoice(toFrom.value, detail.value, amount.valueAsNumber);
+        doc = new Invoice(...args);
     }else {
-        doc = new Payment(toFrom.value, detail.value, amount.valueAsNumber);
+        doc = new Payment(...args);
     }
     
     // render details of the invoice/payment to the DOM
