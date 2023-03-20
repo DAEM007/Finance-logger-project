@@ -290,3 +290,5 @@ Recall, when we talked about **type aliases**...interfaces in TypeScript are jus
 `person.hobbies(person.name);` // Emmanuel Damilola loves to code for long hours... 
 
 *Note: That in interfaces, something to put in mind is that they can be extended...just like you extend classes in JavaScript.*
+
+*P.S: There are still other concepts like generics, enums, tuples... that I didn't talk about here but you can find them in the [TypeScript documentation](https://www.typescriptlang.org/docs/).*
